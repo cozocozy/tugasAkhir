@@ -1,0 +1,493 @@
+/* fontface */
+/* @font-face {
+  font-family: "viga";
+  src: url("viga.ttf");
+  src: url("viga.ttf") format("ttf"), url("viga.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sourcesanspro";
+  src: url("sourcesanspro.ttf");
+  src: url("sourcesanspro.ttf") format("ttf"), url("sourcesanspro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "playfair";
+  src: url("playfair.ttf");
+  src: url("playfair.ttf") format("ttf"), url("playfair.ttf") format("truetype");
+} */
+
+/* font-family: 'Playfair Display', serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Viga', sans-serif; */
+
+/* default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    text-decoration: none;
+    min-height: 100vh;
+    background: #333;
+  }
+  .home {
+    background-image: linear-gradient(to right, #e9edc9, #ccd5ae);
+    overflow-x: hidden;
+    height: 38rem;
+
+  }
+  
+  /* scroll */
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 15px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    background-color: #1AAD70;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  #myBtn:hover {
+    background-color: #FFFFFF;
+    color: #1AAD70;
+  }
+  
+  
+  /* navbar */
+  .navigation {
+    background-image: linear-gradient(to right, #e9edc9, #ccd5ae);
+  
+  }
+  .navbar-brand {
+    font-size: 35px;
+    color: #1af79b !important;
+  
+  }
+  .logo {
+    margin-left: -4rem;
+    font-family: font-family: 'Viga', sans-serif; 
+    font-weight: bolder;
+    font-size: 30px;
+    color: #1AAD70 !important;
+  }
+  .logo:hover {
+    text-decoration: none;
+  }
+  
+  
+  /* home */
+  .home img {  
+    width: 15rem;
+    height: 20rem;
+    margin-top: 3rem;
+    margin-left: -55px;
+  }
+  .text {
+    font-family: "Viga", sans-serif;
+    font-weight: 500;
+    margin-top: 5rem;
+    font-size: 25px;
+    text-align: center;
+  }
+  h5 {
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: left;
+    margin-left: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  .button {
+    letter-spacing: 0;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    margin-left: 0.5rem;
+    background-color: #1af79b;
+    color: white;
+    border-color: #1af79b;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+  }
+  .button:hover {
+    background-color:white;
+    color: #1AAD70;
+  }
+  span {
+      color:#1AAD70;
+  }
+  
+  /* login form */
+  
+  .form-title h2 {
+    color: #1AAD70;
+    font-family: "Viga", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    
+  }
+  label {
+    font-family: "Viga", sans-serif;
+  }
+  .btn-login {
+    background-color: #1AAD70;
+    border-radius: 3rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .btn-login:hover {
+    background-color:#21c27f;
+    color: #FFFFFF;
+  }
+  .text-login {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    margin-left: -5rem;
+  }
+  .btn-switch {
+    background-color: #1AAD70;
+    width: 10rem;
+    font-size: 1rem;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    border-radius: 3rem;
+  }
+  .btn-switch:hover {
+    background-color:#21c27f;
+    color: #FFFFFF;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-style: italic;
+    font-weight: 300;
+    opacity: 0.3;
+  }
+  :-moz-placeholder {
+    font-style: italic;  
+    font-weight: 300;
+    opacity: 0.3;
+  }
+  ::-moz-placeholder {
+    font-style: italic; 
+    font-weight: 300; 
+    opacity: 0.3;
+  }
+  :-ms-input-placeholder {  
+    font-style: italic; 
+    font-weight: 300;
+    opacity: 0.3;
+  }
+  
+  /* layanan */
+  .layanan {
+    height: 90rem;
+    background-color: white;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Viga", sans-serif;
+    font-size: 2rem;
+    color: #1AAD70;
+    position: relative;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+  }
+  h1::before ,h1::after {
+      content:'';
+      position: absolute;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-top: 4px solid  #1AAD70;
+      border-left: 4px solid  #1AAD70;
+  }
+  h1::before {
+      margin-left: -1.5rem;
+      margin-top: -10px;
+  }
+  h1::after {
+      margin-left: -1rem;
+      margin-top: 10px;
+      transform: rotate(180deg);
+  }
+  h4 {
+    font-family: "Viga", sans-serif;
+    color: #1AAD70;
+    margin-top: -1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .content-layanan {
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-bottom: 2rem;
+    text-align: justify;
+    border:4px solid #1AAD70;
+    margin-left: 1rem;
+    border-radius: 10%;
+    padding: 2.3rem;
+    font-weight: 600;
+  }
+  .content-layanan img{
+    height: 16rem;
+    width: 16rem;
+    padding: 2rem;
+    margin-left: -4rem;
+  }
+  
+  
+  /* about */
+  .about {
+      height: 55rem;
+      background-image: linear-gradient(to right, white, #e5e5e5);
+  }
+  .about h1 {
+    margin-top: 4rem;
+  }
+  .about img {
+    height: 20rem;
+    width: 25rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .about h5 {
+    text-align:justify;
+  
+  }
+  
+  
+  /* contact */
+  .kontak {
+    height: 55rem;
+    background-image: white;
+    margin-top:-2rem;
+  }
+  .kontak h1 {
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+  }
+  .kontak h5 {
+    font-size: 1.5rem;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align-last: center;
+  }
+  .lokasi, .whatsapp , .email {
+    text-align: center;
+  }
+  
+  
+  /* footer */
+  .footer {
+      height: 6rem;
+      margin-top:-3rem;
+      background-color: #1AAD70;
+  }
+  .footer h3 {
+      color: #FFFFFF;
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+  .footer h4 {  
+    color: #FFFFFF;
+    font-size: 13px;
+  }
+    :root {
+        background-color: #1AAD70;
+    }
+  
+  
+  /* desktop version */
+  @media (min-width: 992px) {
+    /* navbar desktop */
+    .navbar-brand {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 35px;
+      margin-left: -10rem;
+    }
+    .logo {
+      font-family: font-family: 'Viga', sans-serif; 
+      font-weight: bold;
+      font-size: 30px;
+      color: #1AAD70 !important;
+      margin-left: 1px;
+      text-shadow: 1px 1px;
+    }
+    .logo:hover {
+      text-decoration: none;
+    }
+    .nav-link {
+      text-transform: uppercase;
+      font-family: "Viga", sans-serif;
+      font-size: 1.3rem;
+      margin-left:15rem;
+      margin-right: -10rem;
+    }
+    .nav-link:hover::after {
+      content: "";
+      display: block;
+      border-bottom: 3px solid;
+      border-color: #414833;
+      width: 70%;
+      margin: auto;
+      padding-bottom: 5px;
+      margin-bottom: -8px;
+      font-size: 30px;
+    }
+    .button:hover {
+      background-color: white;
+      color: #1AAD70;
+    }
+  
+    /* home */
+    .home {
+      height: 60rem;
+    }
+    .home img {
+      width: 55rem;
+      height: 55rem;
+      margin-left: 1rem;
+      margin-top: -4rem;
+    }
+    .text {
+      font-family: "Viga", sans-serif;
+      font-weight: 500;
+      font-size: 5rem;
+      text-align: center;
+      margin-left: -12rem;
+      margin-top: 35px;
+    }
+    .button {
+      margin-top: -1rem;
+      border-radius: 25px;
+      padding: 12px 60px;
+      font-size: 1.5rem;
+      background-color: #1AAD70;
+    }
+    h5 {
+        font-size: 28px;
+        font-family: 'Source Sans Pro',sans-serif;
+        text-align: justify;
+        margin: 2rem;
+
+      }
+  
+    /* layanan */
+    .layanan {
+      height: 120rem;
+    }
+    h1 {
+      text-align: center;
+      font-family: "Viga", sans-serif;
+      font-size: 3rem;
+      color: #1AAD70;
+      margin-top:3rem;
+      margin-bottom: 7rem;
+    }
+    h1::before ,h1::after {
+        content:'';
+        position: absolute;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-top: 6px solid  #1AAD70;
+        border-left: 6px solid  #1AAD70;
+      }
+      h1::before {
+        margin-left: -1.6rem;
+        margin-top: -10px;
+      }
+      h1::after {
+        margin-left: -1rem;
+        margin-top: 30px;
+        transform: rotate(180deg);
+      }
+      h4 {
+        font-size: 5rem;
+        font-style: italic;
+        margin-top: 5rem;
+      }
+      .content-layanan  {
+        text-align: justify;
+        font-family: 'Source Sans Pro ',sans-serif;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        font-weight: unset;
+      }
+      .content-layanan img {
+        height: 30rem;
+        width: 25rem;
+        margin-left: 2rem;
+      }
+      
+      /* about */
+      .about {
+        height: 70rem;
+      }
+      .about img {
+        height: 40rem;
+        width: 40rem;
+        margin-left: -7rem;
+        margin-top: -3rem;
+      }
+      .about h5 {
+        font-size: 2rem;
+        margin-right: -5rem;
+      }
+  
+      /* contact */
+      .kontak {
+        height: 40rem;
+      }
+      .kontak h1 {
+          margin-bottom: 10rem;
+      }
+  
+      /* footer */
+      .footer h3 {
+          font-size: 3rem;
+          text-align: left;
+          margin-top: -1rem;
+          margin-left: -18rem;
+      }
+      .footer h4 {
+          font-size: 1rem;
+          text-align: right;
+          margin-right: -15rem;
+          margin-top: -0.5rem;
+      }
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        z-index: 99;
+        font-size: 25px;
+        border: 1px solid #FFFFFF;
+        outline: none;
+        background-color: #1AAD70;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      #myBtn:hover {
+        background-color: #FFFFFF;
+        color: #1AAD70;
+      }
+  }
+  
